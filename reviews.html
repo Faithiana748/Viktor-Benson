@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reviews.css">
+    <title>Viktor Benson</title>
+</head>
+<body>
+
+   <!-- NAVIGATION -->
+     <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">VIKTOR <span>BENSON</span></a>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="mytools.html">My Tools</a>
+            <div class="calc-dropdown">
+                <input type="checkbox" id="calcToggle" class="calc-toggle">
+                <label for="calcToggle" class="calc-trigger">Calculator ▾ </label>
+                <div class="calc-panel">
+                    <a href="#" class="calc-menu-item">
+                        <span class="calc-menu-title">YouTube Money Calculator</span>
+                        <span class="calc-menu-sub">Estimate earnings from views & RPM</span>
+                    </a>
+                    <a href="#" class="calc-menu-item">
+                        <span class="calc-menu-title">CPA Profit Calculator</span>
+                        <span class="calc-menu-sub">Estimate Profit per CPA Offer</span>
+                    </a>
+                    <a href="#" class="calc-menu-item">
+                        <span class="calc-menu-title">Affiliate Marketing Profit Calculator</span>
+                        <span class="calc-menu-sub">Estimate commission-based earnings</span>
+                    </a>
+                    <a href="#" class="calc-menu-item">
+                        <span class="calc-menu-item">Adsterra & Monetag Traffic Calculator</span>
+                        <span class="calc-menu-sub">Estimate ad network traffic revenue</span>
+                    </a>
+                </div>
+            </div>
+            <a href="courses-services.html">Courses & Services</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="courses-services.html" class="cta">Work With Me</a> 
+        </div>   
+     </nav>
+
+    <section id="reviews">
+    <div class="reviews-header">
+        <h1>What people say</h1>
+        <p>Have you worked with me? Share your experience.</p>
+    </div>
+
+    <div class="review-form-wrap">
+        <form class="review-form">
+            <label>Full name</label>
+            <input required name="name">
+
+            <label>Social media handle</label>
+            <input name="handle" placeholder="@yourhandle">
+
+            <label>Service used</label>
+            <input required name="service">
+
+            <label>Rating</label>
+              <div class="star-picker" id="starPicker">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" name="rating" id="ratingInput">
+
+            <label>Your review</label>
+            <textarea required name="review" rows="4"></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <div class="how-it-works" tabindex="0">
+            <p class="label">How reviews work</p>
+            <p>Submitted reviews are stored for approval before they appear publicly below.</p>
+            <!-- [Connect a database later to persist and moderate submissions.] -->
+        </div>
+    </div>
+
+   <h2>Approved reviews</h2>
+   <div class="review-grid">
+    <article class="review-card" tabindex="0">
+        <div class="avatar-placeholder">[AVATAR]</div>
+        <p class="reviewer-name">Amaka O.</p>
+        <p class="reviewer-handle">@amaka.creates</p>
+        <p class="stars">★★★★★</p>
+        <p class="reviewed-service">Brand Content Strategy</p>
+        <p class="review-text">"Clear, practical, and delivered exactly what we planned".</p>
+    </article>
+
+    <article class="review-card" tabindex="0">
+        <div class="avatar-placeholder">[AVATAR]</div>
+        <p class="reviewer-name">Tunde A.</p>
+        <p class="reviewer-handle">@tundeworks</p>
+        <p class="stars">★★★★★</p>
+        <p class="reviewed-service">1:1 Mentorship Call</p>
+        <p class="review-text">"One call gave me more clarity than months of research".</p>
+    </article>
+
+    <article class="review-card" tabindex="0">
+        <div class="avatar-placeholder">[AVATAR]</div>
+        <p class="reviewer-name">Bisi K.</p>
+        <p class="reviewer-handle">@bisi.k</p>
+        <p class="stars">★★★★★</p>
+        <p class="reviewed-service">AI Video Creation</p>
+        <p class="review-text">"Great turnaround time and solid final videos".</p>
+    </article>
+  </div>
+    
+    </section>
+
+   <!-- FOOTER -->
+      <footer class="site-footer">
+       <div class="footer-grid">
+ 
+    <div class="footer-brand">
+      <p class="footer-brand-name">VIKTOR <span>BENSON</span></p>
+      <p class="footer-tagline">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+ 
+    <div class="footer-links">
+      <p class="footer-heading">Navigate</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="blog.html">Blog</a>
+      <a href="mytools.html">Tools</a>
+      <a href="courses-services.html">Courses & Services</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+ 
+    <div class="footer-links">
+      <p class="footer-heading">Projects</p>
+      <a href="www.coursearly.com">Coursearly</a>
+      <a href="#">My Blud</a>
+    </div>
+ 
+    <div class="footer-social">
+      <p class="footer-heading">Follow</p>
+        <a href="#" class="social-link"><span><img src="instagram.svg" alt="Instagram"></span> Instagram</a>
+        <a href="#" class="social-link"><span><img src="communication.svg" alt="Facebook"></span> Facebook</a>
+        <a href="#" class="social-link"><span><img src="tik-tok.svg" alt="TikTok"></span> TikTok</a>
+        <a href="#" class="social-link"><span><img src="youtube.svg" alt="YouTube"></span> YouTube</a>
+        <a href="#" class="social-link"><span><img src="twitter.svg" alt="X"></span> X / Twitter</a>
+        <a href="#" class="social-link"><span><img src="linkedin.svg" alt="X"></span> LinkedIn</a>
+        <a href="#" class="social-link"><span><img src="substack.svg" alt="Substack"></span> Substack</a>
+    </div>
+ 
+  </div>
+
+     <p class="footer-copyright">© 2026 Viktor Benson. All rights reserved.</p>
+      </footer>
+
+<script>
+    (function(){
+    var picker = document.getElementById('starPicker');
+    var stars  = picker.querySelectorAll('.star');
+    var input  = document.getElementById('ratingInput');
+    var msg    = document.getElementById('reviewMsg');
+    var rating = 0;
+ 
+    // light up every star up to n, using the given class ('on' = chosen, 'hover' = preview)
+    function paint(n, cls){
+        stars.forEach(function(s){
+            s.classList.toggle(cls, Number(s.dataset.value) <= n);
+        });
+    }
+ 
+    stars.forEach(function(s){
+        s.addEventListener('click', function(){
+            rating = Number(s.dataset.value);
+            input.value = rating;
+            paint(rating, 'on');
+        });
+        s.addEventListener('mouseenter', function(){
+            paint(Number(s.dataset.value), 'hover');
+        });
+    });
+    picker.addEventListener('mouseleave', function(){ paint(0, 'hover'); });
+ 
+    document.querySelector('.review-form').addEventListener('submit', function(e){
+        e.preventDefault();
+        if(!rating){
+            msg.style.color = '#E07A5F';
+            msg.textContent = 'Please select a star rating.';
+            return;
+        }
+        msg.style.color = 'var(--gold)';
+        msg.textContent = 'Thanks! Your review has been submitted and is pending approval.';
+        e.target.reset();
+        rating = 0;
+        input.value = '';
+        paint(0, 'on');
+    });
+})();
+</script>
+    
+</body>
+</html>
